@@ -1,5 +1,6 @@
 {
-  "name": "no_wat",
+  "homepage": "https://rafalh4.github.io/NO_WAT",
+  "name": "NO_WAT",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,12 +8,15 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "antlr4": "^4.9.1",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
